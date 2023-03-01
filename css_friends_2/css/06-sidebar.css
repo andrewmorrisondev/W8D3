@@ -4,11 +4,19 @@
   display: block;
   margin-top: -130px;
   position: relative;
+  border: 5px solid pink;
+}
+
+.profile-picture {
+  position: relative;
+  display: block;
 }
 
 #profile-picture {
   border: 2px solid rgb(234, 214, 214);
   border-radius: 5%;
+  position: relative;
+  /* overflow: hidden; */
 }
 
 /* .content-sidebar:after{
