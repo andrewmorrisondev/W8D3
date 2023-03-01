@@ -53,10 +53,11 @@ Board.prototype.isValidPos = function (pos) {
  * throwing an Error if the position is invalid.
  */
 Board.prototype.getPiece = function (pos) {
-  //debugger
+  debugger
   if (this.isValidPos(pos)){
+    // pos = [1][0]
     // return this[pos[0]],[pos[1]];
-    return this[pos];//[0],pos[1]];
+    return this.grid[pos[0]][pos[1]];//[0],pos[1]];
   } else {
     throw new Error('Not valid pos!');
   };
