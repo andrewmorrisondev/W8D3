@@ -67,6 +67,7 @@ Board.prototype.getPiece = function (pos) {
  * matches a given color.
  */
 Board.prototype.isMine = function (pos, color) {
+  return this.getPiece(pos).color === color;
 };
 
 /**
