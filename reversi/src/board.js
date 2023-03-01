@@ -20,8 +20,8 @@ function _makeGrid () {
 
   return x;
 };
-
-console.log(_makeGrid());
+//let a=_makeGrid();
+//console.log(a[3][4]);
 
 /**
  * Constructs a Board with a starting grid set up.
@@ -40,6 +40,12 @@ Board.DIRS = [
  * Checks if a given position is on the Board.
  */
 Board.prototype.isValidPos = function (pos) {
+  if (pos[0] > 7 || pos[0] < 0 || pos[1] > 7 || pos[1] < 0){
+    return false;
+  } else{
+    return true;
+  }; 
+
 };
 
 /**
@@ -47,6 +53,13 @@ Board.prototype.isValidPos = function (pos) {
  * throwing an Error if the position is invalid.
  */
 Board.prototype.getPiece = function (pos) {
+  //debugger
+  if (this.isValidPos(pos)){
+    // return this[pos[0]],[pos[1]];
+    return this[pos];//[0],pos[1]];
+  } else {
+    throw new Error('Not valid pos!');
+  };
 };
 
 /**
