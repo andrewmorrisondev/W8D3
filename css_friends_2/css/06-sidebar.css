@@ -2,6 +2,30 @@
 
 .content-sidebar {
   display: block;
-  margin-top: -80px;
+  margin-top: -130px;
   position: relative;
+}
+
+#profile-picture {
+  border: 2px solid rgb(234, 214, 214);
+  border-radius: 5%;
+}
+
+/* .content-sidebar:after{
+  content
+} */
+.profile-nav {
+  margin-top: 15px;
+}
+.profile-nav ul * {
+  border-bottom: 1px solid gray;
+  font-weight: bold;
+  padding: 5px;
+}
+.profile-nav ul:first-child {
+  border-top: 1px solid gray;
+}
+
+.profile-nav ul li:hover {
+  background-color: rgb(236, 232, 232);
 }
